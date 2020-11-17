@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TEAM MACDEV</title>
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+	<!-- MY CSS -->
+	<link rel="stylesheet" href=".././style.css">
+	<link rel="stylesheet" href=".././breakpoints.css">
+
+<style>	
+	
+	.content{
+		display: none;
+	}
+	#red,#blue{
+		height:2rem;
+		width:2rem;
+		border-radius:50%;
+		margin:0.5rem;
+	}
+	#red{
+		background: red;
+	}
+	#blue{
+		background: blue;
+	}
+	#brush{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		margin-right:5rem;
+	}
+	p{
+		color:white;
+	}
+	#colorSel{
+		display: flex;
+		margin-left:2rem;
+	}
+</style>
+
+</head>
+<body>
+	
+	<div class="wrapper">
+
+		<!-- NAVBAR -->
+		<!-- NAVBAR -->
+		<!-- NAVBAR -->
+		<div class="navBar">
+			<div class="spacer"></div>
+			<a href=".././index.html" class="nav-link">HOME</a>
+			<a href=".././model01/catModel.html" class="nav-link">DRAW POKEMON</a>
+			<a href="#" class="nav-link active">BLOB TO HUMAN</a>
+			<a href=".././index.html#about" class="nav-link">ABOUT</a>
+			<a href=".././index.html#team" class="nav-link">TEAM</a>
+		</div>
+		<!-- NAVBAR -->
+		<!-- NAVBAR -->
+		<!-- NAVBAR -->
+
+			 <div id="loader" class="sec">
+					<div class="spinner"></div>
+			</div>
+		
+			<div class="content">
+			
+
+			<!-- HOME -->
+			<!-- HOME -->
+			<div class="catModel sec" id="home">
+				<h1 class="pageTitle red">
+					BLOB TO HUMAN
+				</h1>
+<br />
+				<!--  -->
+				<!--  -->
+
+				<div class="canvas">
+				  <div id="input"></div>
+				  <img id="outImg">
+				</div>
+				<div id="brush">
+					<p>Color</p>
+				  <p>Set Brush Size</p>
+				  
+				  
+				  <span id="colorSel">
+					  <div id="red"></div>
+					  <div id="blue"></div>
+					</span>
+					<input type="range" id="size" min="1" max="50" value="17">
+				</div>
+				<div id="btnDiv">
+				  <button class="btn" onclick="background(255,0,0)">Clear</button>
+				  <button class="btn" onclick="transfer()">Transfer</button>
+				</div>
+
+
+				<!--  -->
+				<!--  -->
+
+
+				<p class="basicText">
+					Red is the Background <br>
+					the Blue blob describes a person in the scene
+				</p>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<!-- SCRIPT -->
+	<!-- SCRIPT -->
+	<!-- SCRIPT -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="app.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+@media only screen and (max-width: 1500px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 4.5fr;
+	}
+	.nav-link {
+		font-size: 1.8rem;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 5fr;
+	}
+	.nav-link {
+		font-size: 1.5rem;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.wrapper {
+		display: block;
+	}
+
+	.nav-link {
+		font-size: 1.2rem;
+		display: inline;
+		padding: 0 0.5rem;
+	}
+	.navBar {
+		position: absolute;
+		padding: 0.5rem 0;
+		text-align: center;
+		width: 100vw;
+		height: fit-content;
+		transition: 0.5s;
+		z-index: 9;
+	}
+	.spacer {
+		display: none;
+	}
+
+	.canvas {
+		display: block;
+		text-align: center;
+		margin: 4rem 0;
+	}
+	.canvas > #outImg {
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.mainTitle {
+		font-size: 3rem;
+		padding-top: 8rem;
+		letter-spacing: 0;
+	}
+	.team {
+		display: block;
+	}
+	.about {
+		padding-left: 0rem;
+	}
+}
