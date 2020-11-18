@@ -1,6 +1,6 @@
 # WebImageProcessing
 
-This project uses WEBGL for training the model localy on the clients machine. **Make sure you have a good procesor and GPU**
+This project uses WEBGL for training the model localy on the clients machine. **Make sure you have a good processor and GPU**
 
 Live demo available on the link bellow
 
