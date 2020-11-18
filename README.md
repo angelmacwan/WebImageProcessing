@@ -1,5 +1,7 @@
 # WebImageProcessing
 
+This project uses WEBGL for training the model localy on the clients machine. **Make sure you have a good procesor and GPU**
+
 Live demo available on the link bellow
 
 ### https://angelmacwan.github.io/WebImageProcessing/index.html
